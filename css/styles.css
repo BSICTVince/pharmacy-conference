@@ -1,0 +1,628 @@
+:root {
+  --primary-teal: #39b7ba;
+  --primary-dark-blue: #003d82;
+  --secondary-blue: #0d5a8f;
+  --light-bg: #f8f9fa;
+  --light-gray: #595a5b;
+  --dark-text: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+p {
+  margin: unset !important;
+  margin-bottom: unset !important;
+}
+
+i {
+  line-height: unset !important;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-text);
+}
+
+.text-teal {
+  color: var(--primary-teal) !important;
+}
+
+.text-gray {
+  color: var(--light-gray) !important;
+}
+
+.cal-date {
+  background-color: var(--primary-teal) !important;
+  padding: 1px 8px 1px 11px;
+  color: #ffff;
+  font-weight: 600;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.show-for-large {
+  display: block;
+}
+
+.text-primary-blue {
+  color: var(--primary-dark-blue) !important;
+}
+
+.text-dark {
+  color: var(--dark-text) !important;
+}
+
+.text-muted {
+  color: #000000 !important;
+}
+
+.timer_gutter {
+  margin: 0px 0px 0 50px;
+}
+
+/* Navigation */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.navbar-brand sup {
+  font-size: 0.7em;
+}
+
+.nav-link {
+  color: #003d82 !important;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-teal) !important;
+}
+
+.btn-teal {
+  background-color: var(--primary-teal);
+  border-color: var(--primary-teal);
+  color: white;
+  font-weight: 600;
+  padding: 8px 24px;
+  font-size: 14px;
+}
+
+.btn-teal:hover {
+  background-color: #00a8bb;
+  border-color: #00a8bb;
+  color: white;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: var(--primary-teal);
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #fff;
+}
+
+.hero-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 65px;
+  background-color: white;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.15),
+    /* inner shadow */
+    0 6px 12px rgba(0, 0, 0, 0.2);
+  /* outer shadow */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-dark-blue);
+  margin-bottom: 10px;
+}
+
+/* First line */
+.hero-title span:first-child {
+  font-weight: 500;
+}
+
+.purehealth {
+  padding-top: 40px;
+  width: 27%;
+}
+
+.hero-logo {
+  width: 50%;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.bd {
+  /* position: absolute;
+  inset: 0;
+  top: -80px; */
+  max-width: 57%;
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+}
+
+/* Second line */
+.hero-title span:nth-child(3) {
+  /* nth-child(3) because of <br> tags counting as children */
+  color: var(--primary-teal);
+  /* or use your custom .text-teal class */
+  font-weight: 800;
+  font-size: 92px;
+  letter-spacing: 13px;
+  transform: scaleY(1.3);
+  /* 1 = normal, 1.5 = 50% taller */
+  display: inline-block;
+}
+
+/* Third line */
+.hero-title span:last-child {
+  font-weight: 300;
+  font-size: 68px;
+  color: var(--primary-teal);
+  letter-spacing: 14px;
+  transform: scaleY(1.3);
+  /* 1 = normal, 1.5 = 50% taller */
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+}
+
+/* Countdown Section */
+.countdown {
+  display: flex;
+  justify-content: start;
+  gap: 25px;
+}
+
+.countdown-group {
+  display: flex;
+  gap: 4px;
+}
+
+.countdown-item {
+  background: linear-gradient(135deg, #03747f, #00c4c9);
+  color: #fff;
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 58px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#event-happening {
+  display: none;
+}
+
+#event-happening.show {
+  background: linear-gradient(135deg, #03747f, #00c4c9);
+  color: #fff;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  display: none;
+  border-radius: 8px;
+}
+
+.happening-now-text {
+  color: #fff;
+  text-align: center;
+}
+
+.countdown-label {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #39b7ba;
+}
+
+.countdown-sep {
+  position: relative;
+  width: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+
+.countdown-sep::before,
+.countdown-sep::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #0d5a8f;
+  border-radius: 2px;
+}
+
+.countdown-sep::before {
+  top: 22px;
+  /* upper square */
+}
+
+.countdown-sep::after {
+  bottom: 0;
+  /* lower square */
+}
+
+/* Added CME badge styling */
+.cme-badge {
+  display: flex;
+  align-items: center;
+}
+
+.cme-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.section_title {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.welcome-section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary-dark-blue);
+  font-weight: 600;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-dark-blue) 100%);
+  padding: 60px 0;
+  color: white;
+}
+
+.stats-section h2 {
+  color: var(--primary-teal);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.stats-section p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Why Attend Section */
+.why-attend-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.why-attend-section .list-unstyled li {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.why-attend-section svg {
+  color: var(--primary-teal);
+}
+
+/* Who Should Attend Section */
+.who-attend-section {
+  background-color: var(--light-bg);
+  padding: 60px 0;
+}
+
+.who-attend-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-teal);
+  margin-bottom: 5px;
+}
+
+.attendee-circle {
+  width: 145px;
+  height: 130px;
+  background-color: var(--primary-teal);
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attendee-circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.3);
+}
+
+.attendee-circle svg {
+  stroke: white;
+}
+
+.who-attend-section h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-top: 10px;
+}
+
+/* Need More Info Section */
+.need-info-section {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, #00a3c4 100%);
+  padding: 60px 0;
+}
+
+.need-info-section h1,
+.need-info-section h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+.btn-navy {
+  background-color: var(--primary-dark-blue);
+  border-color: var(--primary-dark-blue);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 21px 40px;
+  letter-spacing: 0.5px;
+  border-radius: 40px !important;
+}
+
+.btn-navy:hover {
+  background-color: #002857;
+  border-color: #002857;
+  color: white;
+}
+
+/* Venue Section */
+.venue-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.venue-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.venue-section h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Discover Al Ain Section */
+.discover-section {
+  background-color: var(--light-bg);
+  padding: 60px 0;
+}
+
+/* Footer */
+.footer-section {
+  color: #000000;
+}
+
+.footer-section .text-white {
+  color: white;
+}
+
+.footer-section h5 {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.footer-section strong {
+  color: #000;
+}
+
+.footer-section hr {
+  opacity: 0.2;
+}
+
+.footer-section sup {
+  font-size: 0.7em;
+}
+
+.footer-section i {
+  font-size: 12px;
+}
+
+.footer-section iframe {
+  width: 55vh;
+  height: 150px;
+  border: none;
+  /* optional: removes default border */
+  display: block;
+  /* ensures no inline spacing issues */
+}
+
+#welcome img {
+  width: 180px;
+}
+
+#conference-leadership img {
+  width: 250px;
+}
+
+.navbar>.container {
+  max-width: 1440px !important;
+}
+
+
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUpTextOnly 0.6s ease-out forwards;
+}
+
+.cme-badge img {
+  width: 135px;
+}
+
+.h-hide {
+  display: none !important;
+}
+
+.h-show {
+  display: block !important;
+}
+
+/* comitter css */
+.team-card {
+  text-align: center;
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+}
+
+#comittee-team .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#comittee-team #row-1 .card-body {
+  height: 177px;
+}
+
+#comittee-team #row-2 .card-body,
+#comittee-team #row-3 .card-body {
+  height: 240px;
+}
+
+#comittee-team #row-4 .card-body {
+  height: 340px;
+}
+
+
+.card_cotent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.team-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary-dark-blue);
+}
+
+.team-title,
+.team-member,
+.team-assignment {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.btn-profile {
+  font-size: 0.85rem;
+  padding: 6px 16px;
+}
+
+#comittee-team a {
+  background-color: var(--primary-dark-blue);
+  color: #f0f0f0;
+  font-size: 14px;
+  padding: 5px 18px 5px 18px;
+  border-radius: 22px;
+}
+
+#comittee-team a:hover {
+  background-color: #f0f0f0;
+  color: var(--primary-dark-blue);
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1st Al Ain Regional Pharmacy Conference</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Font Awesome 6 Free CDN -->
+    <script src="https://kit.fontawesome.com/9f6e90d4ba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" style="font-family: Montserrat;" href="#home">
+
+                <img src="assets/images/logo.png" alt="Al Ain" class="img-fluid" style="max-width: 100%;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto w-100 justify-content-evenly">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#welcome">Welcome Note</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Program</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Scientific Agenda</a></li>
+                            <li><a class="dropdown-item" href="#">Who Should Attend</a></li>
+                            <li><a class="dropdown-item" href="#">Conference Objectives</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Committee &
+                            Speakers</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Organizing Committee</a></li>
+                            <li><a class="dropdown-item" href="scientific-committee.html">Scientific Committee</a></li>
+                            <li><a class="dropdown-item" href="#">Speakers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Partners</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#partners">Sponsors</a></li>
+                            <li><a class="dropdown-item" href="#partners">Media Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#venue">Venue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Get In Touch</a></li>
+                </ul>
+                <a href="#register" class="btn btn-teal ms-0  ms-lg-3">Register Here</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section pt-5">
+        <div class="container">
+            <div class="hero-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="d-flex mb-0 mb-md-3 mb-lg-4 px-3 px-md-3 px-lg-5 pb-1 pb-lg-3">
+                            <img src="assets/images/purehealth.png" alt="Al Ain"
+                                class="img-fluid fade-in-up purehealth" />
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex">
+                        <img src="assets/images/hero-logo.png" alt="Al Ain" class="img-fluid hero-logo" />
+                        <img src="assets/images/bd.png" alt="Al Ain" class="img-fluid bd" />
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown & CME Section -->
+    <section class="countdown-section fade-in-up">
+        <div class="container pt-3 pt-md-5 pt-lg-5">
+            <div class="row timer_gutter">
+                <div id="countdown-timer" class="col-10 col-lg-10 countdown justify-content-between">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="countdown-group" id="days">
+                            <div class="countdown-item">0</div>
+                            <div class="countdown-item">0</div>
+                        </div>
+                        <div class="countdown-label">DAYS</div>
+                    </div>
+
+                    <div class="countdown-sep">:</div>
+
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="countdown-group" id="hours">
+                            <div class="countdown-item">2</div>
+                            <div class="countdown-item">5</div>
+                        </div>
+                        <div class="countdown-label">HOURS</div>
+                    </div>
+
+                    <div class="countdown-sep">:</div>
+
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="countdown-group" id="minutes">
+                            <div class="countdown-item">2</div>
+                            <div class="countdown-item">5</div>
+                        </div>
+                        <div class="countdown-label">MINUTES</div>
+                    </div>
+
+                    <div class="countdown-sep">:</div>
+
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="countdown-group" id="seconds">
+                            <div class="countdown-item">2</div>
+                            <div class="countdown-item">5</div>
+                        </div>
+                        <div class="countdown-label">SECONDS</div>
+                    </div>
+                </div>
+
+                <div id="event-happening" class="col-12 col-lg-10">
+                    <h2 class="happening-now-text">🎉 The Event is Happening Now! 🎉</h2>
+
+                </div>
+
+                <!-- Added CME badge -->
+                <div class="cme-badge col-2 col-lg-2 show-for-large">
+                    <div class="w-100 d-flex justify-content-center justify-content-lg-end">
+                        <img src="assets/images/cme-logo.png" alt="CME Logo 2024 under process"
+                            class="img-fluid rounded" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Welcome Note Section -->
+    <section id="welcome" class="welcome-section ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 col-lg-10 pe-lg-5 fade-in-up">
+                    <h2 class="section_title text-teal mb-2">Welcome Note</h2>
+                    <h3 class="section_subtxt mb-4">1st Al Ain Regional Pharmacy Conference</h3>
+
+                    <p class="text-muted mb-3 fade-in-up">
+                        We are delighted to extend a warm welcome to the 1st Al Ain Region Pharmacy Conference, taking
+                        place on December 6th to 7th, 2025, in the beautiful city of Al Ain. Known for its unique charm
+                        and rich heritage, Al
+                        Ain provides a perfect setting for valuable professional exchange.
+                    </p>
+                    <p class="text-muted mb-3 fade-in-up">
+                        This conference is designed to engage, inspire and promote the exchange of ideas around the most
+                        recent developments in pharmaceutical and clinical research. Through insightful discussions,
+                        collaborative learning
+                        and expert-led sessions, we aim to enhance pharmaceutical knowledge, strengthen pharmacy-related
+                        skills and foster an environment where evidence-based practice continues to thrive.
+                    </p>
+                    <p class="text-muted mb-3 fade-in-up">
+                        We sincerely encourage all of you to seize this opportunity to actively participate, share
+                        knowledge, and contribute to the collective pursuit to advance in pharmacy education and patient
+                        care.
+                    </p>
+                    <p class="text-muted fade-in-up">
+                        On behalf of the 1st Al Ain Region Pharmacy Conference Scientific and Organizing committee
+                        members, we extend our sincerest gratitude to the organizers, sponsors, speakers, and attendees
+                        for their dedication and
+                        support in making this event possible.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 fade-in-up">
+                    <!-- Stacked images on right side -->
+                    <div class="d-flex flex-row flex-lg-column align-items-end gap-3 mt-3 mt-lg-0">
+                        <div class="mb-4">
+                            <img src="assets/images/wc-note-1.png" alt="Conference" class="img-fluid rounded" />
+                        </div>
+                        <div class="mb-4">
+                            <img src="assets/images/wc-note-2.png" class="img-fluid rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Leadership -->
+            <div id="conference-leadership"
+                class=" d-flex flex-column flex-md-row flex-lg-row   mt-5 pt-5 justify-content-evenly">
+                <div class="text-center fade-in-up">
+                    <img src="assets/images/jumana.png?height=140&width=140" alt="Dr. Jumana Al Almi" class="mb-3" />
+                    <h5 class="text-primary-blue fw-600">Dr. Jumana Al Almi</h5>
+                    <p class="text-gray small" style="font-weight: 500;">Conference Chair</p>
+                    <p class="text-gray small">
+                        Inpatient Pharmacy Manager<br />
+                        STMC/Tawam Hospital
+                    </p>
+                </div>
+                <div class="text-center fade-in-up">
+                    <img src="assets/images/lina.png?height=140&width=140" alt="Dr. Lina Wahba" class="mb-3" />
+                    <h5 class="text-primary-blue fw-600">Dr. Lina Wahba</h5>
+                    <p class="text-gray small" style="font-weight: 500;">Conference Co-Chair</p>
+                    <p class="text-gray small">
+                        Head of Clinical Pharmacy Services<br />
+                        Tawam Hospital
+                    </p>
+                </div>
+                <div class="text-center fade-in-up">
+                    <img src="assets/images/basma.png?height=140&width=140" alt="Dr. Basma Beiram" class="mb-3" />
+                    <h5 class="text-primary-blue fw-600">Dr. Basma Beiram</h5>
+                    <p class="text-gray small" style="font-weight: 500;">Conference Co-Chair</p>
+                    <p class="text-gray small">
+                        Senior Clinical Pharmacist<br />
+                        STMC
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Who Should Attend Section -->
+    <section id="who-attend" class="who-attend-section py-5 fade-in-up">
+        <div class="container ">
+            <div class="">
+                <h2 class="section_title mb-2">Who Should <span class="text-primary-blue">Attend</span></h2>
+                <p class="text-muted mb-5">We welcome a diverse range of participants, including:</p>
+
+                <div class="row g-4 justify-content-center justify-content-lg-start text-center">
+                    <!-- Pharmacists -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-parmacist.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">Pharmacists</h5>
+                    </div>
+
+                    <!-- Clinical Specialists -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-clinic-pharma-specialist.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">
+                            Clinical Pharmacy<br />
+                            Specialists
+                        </h5>
+                    </div>
+
+                    <!-- Technicians -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-pharma-tec.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">
+                            Pharmacy<br />
+                            Technicians
+                        </h5>
+                    </div>
+
+                    <!-- Heads -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-pharma-dep-head.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">
+                            Heads of Pharmacy<br />
+                            Departments
+                        </h5>
+                    </div>
+
+                    <!-- Academicians -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-academians.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">Academicians</h5>
+                    </div>
+
+                    <!-- Researchers -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-researchers.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">Researchers</h5>
+                    </div>
+
+                    <!-- Students -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-students.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">Students</h5>
+                    </div>
+
+                    <!-- Residents -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-residents.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">Residents</h5>
+                    </div>
+
+                    <!-- Medical Educators -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-med-edu.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">Medical Educators</h5>
+                    </div>
+
+                    <!-- Nurses -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-nurse.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">Nurses</h5>
+                    </div>
+
+                    <!-- Healthcare Professionals -->
+                    <div class="col-3 col-sm-4 col-md-3 col-lg-2">
+                        <div class="attendee-circle mb-3">
+                            <img src="assets/images/ico-all-health-prof.png" width="80" height="80" />
+                        </div>
+                        <h5 class="text-primary-blue">
+                            All other related<br />
+                            Healthcare Professionals
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section ">
+        <div class=""> <!-- Need More Information Section -->
+            <div id="contact" class="need-info-section py-5">
+                <div class="container fade-in-up">
+                    <div class="text-center text-white d-flex align-items-center justify-content-evenly">
+                        <h2>Need More Information?</h2>
+                        <a href="get-in-touch.html" class="btn btn-navy btn-lg">CONNECT WITH US</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="venue" class="container pt-5">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <h5 class="text-dark fade-in-up">Conference Venue:</h5>
+                        <div class="col-lg-6">
+                            <div class="w-100 d-flex flex-column flex-lg-row">
+                                <img src="assets/images/exterior.png" />
+
+                                <div class="col-lg-8 p-2">
+                                    <h4 class="text-dark mb-3 fw-80 fade-in-up">Al Ain Rotana</h4>
+                                    <p class="mb-3 text-dark fw-400 fade-in-up">
+                                        <strong>Sheikh Zayed Road</strong><br />
+                                        <strong>Zayed Bin Sultan Street</strong><br />
+                                        <strong>United Arab Emirates</strong>
+                                    </p>
+
+                                    <i class="fade-in-up"> The hotel is close to major tourist attractions, 120 km from
+                                        Dubai and 160 km
+                                        from Abu Dhabi Airport. </i>
+                                </div>
+                            </div>
+
+                            <iframe class="py-3 fade-in-up"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.6659350129717!2d55.74632170921125!3d24.21847687055863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ab137a51fe16b%3A0xd96fa9b2a8fd80e3!2sAl%20Ain%20Rotana!5e0!3m2!1sen!2sph!4v1762451693316!5m2!1sen!2sph"
+                                style="border: 0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-end fade-in-up">
+                        <img src="assets/images/purehealth.png?height=100&width=150" alt="SEHA" class="img-fluid mb-3"
+                            style="max-width: 500px;" />
+
+                        <div class="d-flex flex-column pt-5 align-items-center align-items-lg-end">
+                            <h5 class="text-dark mb-3">Managed by:</h5>
+                            <img src="assets/images/mco-logo.svg" alt="MCO" class="img-fluid"
+                                style="max-width: 150px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-3 fade-in-up">
+                <p class="text-primary-blue">Copyrigth &copy; 1<sup>st</sup> Al Ain Regional Pharmacy Conference | All
+                    Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("serviceworker.js")
+                .then(reg => console.log("Service Worker registered:", reg.scope))
+                .catch(err => console.error("Service Worker registration failed:", err));
+        });
+    }
+</script>
+
+
+</html>

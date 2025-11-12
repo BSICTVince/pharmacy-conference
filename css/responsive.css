@@ -1,0 +1,372 @@
+/* ============================
+   RESPONSIVE STYLES
+   ============================ */
+
+/* ======= Small Devices (max-width: 414px) ======= */
+@media (max-width: 575px) {
+
+    .countdown {
+        gap: 2px;
+    }
+
+    .countdown-number {
+        font-size: 18px !important;
+    }
+
+    .countdown-label {
+        font-size: 14px !important;
+    }
+
+    .countdown-sep {
+        font-size: 18px !important;
+        margin: 0 3px !important;
+    }
+
+    .countdown-sep::before,
+    .countdown-sep::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .countdown-sep::before {
+        top: 10px;
+    }
+
+    .countdown-sep::after {
+        bottom: 25px;
+    }
+
+    .countdown-item {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 18px !important;
+    }
+
+    .countdown-section {
+        margin-top: 25px;
+    }
+
+    .hero-logo {
+        width: 50%;
+        padding-bottom: -0;
+        padding-right: 27px;
+        padding-left: 2px;
+    }
+
+    .hero-title {
+        font-size: 28px !important;
+    }
+
+    .hero-title span:nth-child(3) {
+        font-size: 40px !important;
+        transform: scaleY(1.5) !important;
+        display: inline-block;
+    }
+
+    .hero-title span:last-child {
+        font-size: 40px !important;
+        letter-spacing: 6px !important;
+    }
+
+    .purehealth {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .cme-circle {
+        width: 60px;
+        height: 60px;
+        font-size: 14px !important;
+    }
+
+    .attendee-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .who-attend-section h2 {
+        font-size: 28px;
+    }
+
+    .stats-section h2 {
+        font-size: 36px;
+    }
+
+    .need-info-section h2 {
+        font-size: 24px;
+    }
+
+    .footer-section iframe {
+        width: 100%;
+    }
+
+    .btn-navy {
+        padding: 9px 40px;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Utilities */
+    .fw-600 {
+        font-weight: 600;
+    }
+
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    section {
+        scroll-margin-top: 80px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .rounded {
+        border-radius: 12px;
+    }
+
+    .btn-teal {
+        width: 100%;
+    }
+
+    #welcome img {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    #conference-leadership img {
+        width: 71%;
+    }
+
+    /* .timer_gutter {
+        margin: 0 0 0 -50px !important;
+    } */
+
+
+    .countdown-section .row {
+        justify-content: left !important;
+    }
+
+    .show-for-large {
+        display: none;
+    }
+
+    .hero-box {
+        border-radius: 37px;
+        padding: 25px;
+    }
+
+    .team-card img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* ======= Medium Devices (415px – 767px) ======= */
+@media (max-width: 767px) {
+
+    .timer_gutter {
+        margin: 0 0 0 0;
+    }
+
+    .countdown-item {
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+    }
+
+    .welcome-section {
+        padding: 24px 0;
+    }
+
+    .cme-badge img {
+        display: none;
+    }
+
+    .countdown {
+        gap: 9px;
+    }
+
+    .countdown-sep::before,
+    .countdown-sep::after {
+        width: 8px;
+        height: 8px;
+    }
+
+    .countdown-sep::before {
+        top: 10px;
+    }
+
+    .countdown-sep::after {
+        bottom: 28px;
+    }
+
+    .purehealth {
+        width: 60%;
+    }
+
+    .footer-section iframe {
+        width: 100%;
+        height: 283px;
+    }
+
+    .countdown-section .container .row {
+        justify-content: center;
+    }
+
+    .show-for-large {
+        display: none;
+    }
+
+    /* .team-card img {
+        width: 150px;
+        height: 150px;
+    } */
+}
+
+/* ======= Tablets (768px – 884px) ======= */
+@media (min-width: 768px) and (max-width: 884px) {
+
+    .container {
+        max-width: 720px !important;
+    }
+
+    .countdown-section .container .row {
+        justify-content: center !important;
+    }
+
+    .timer_gutter {
+        margin: 0 0 0 0;
+    }
+
+    .countdown-item {
+        width: 60px;
+        height: 60px;
+        font-size: 36px;
+    }
+
+    .cme-badge img {
+        display: none;
+    }
+
+    .hero-title span:first-child {
+        font-size: 38px;
+    }
+
+    .hero-title span:nth-child(3),
+    .hero-title span:last-child {
+        font-size: 57px;
+    }
+
+    .footer-section iframe {
+        width: 100%;
+        height: 283px;
+    }
+
+    #welcome img {
+        width: 405px;
+    }
+
+    #conference-leadership img {
+        width: 250px;
+    }
+
+    /* .bd {
+        width: 50%;
+        top: -84px;
+    } */
+
+    .countdown {
+        justify-content: center !important;
+        gap: 17px;
+    }
+
+    .countdown-sep::before,
+    .countdown-sep::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .countdown-sep::after {
+        bottom: 10px;
+    }
+
+    .show-for-large {
+        display: none;
+    }
+}
+
+/* ======= Laptops (885px – 1024px) ======= */
+@media (min-width: 885px) and (max-width: 1024px) {
+
+    /* .bd {
+        width: 100%;
+        top: 0;
+        left: 0;
+    } */
+
+    .countdown-item {
+        width: 50px;
+        height: 50px;
+        font-size: 36px;
+    }
+
+    .welcome-section {
+        padding: 24px 0;
+    }
+
+
+
+    .countdown {
+        gap: 9px;
+    }
+
+    .countdown-sep::before,
+    .countdown-sep::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .countdown-sep::before {
+        top: 10px;
+    }
+
+    .countdown-sep::before {
+        bottom: 15px;
+    }
+
+    .countdown-sep::after {
+        bottom: 15px;
+    }
+
+    .cme-badge img {
+        width: 100px;
+    }
+
+    .footer-section iframe {
+        width: 100%;
+        height: 283px;
+    }
+}
+
+/* ======= Desktops (1025px – 1440px) ======= */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .countdown-item {
+        width: 70px;
+        height: 70px;
+        font-size: 36px;
+
+    }
+
+
+    .cme-badge img {
+        width: 100px;
+    }
+}
