@@ -560,9 +560,8 @@ h6 {
   height: 100%;
 
 }
-.card-body{
-  padding-top: 100px;
-}
+
+
 
 #comittee-team .card-body {
   display: flex;
@@ -572,7 +571,13 @@ h6 {
 }
 
 .card-body {
+  padding-top: 100px;
+  border-radius: 14px;
+
   height: 420px;
+  border-radius: 14px;
+
+
 }
 
 /* #comittee-team #row-2 .card-body,
@@ -599,7 +604,7 @@ h6 {
   margin-bottom: 15px;
   position: relative;
   top: 13%;
-  
+
   z-index: 3;
 }
 
