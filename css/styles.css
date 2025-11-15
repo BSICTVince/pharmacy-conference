@@ -557,6 +557,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  height: 100%;
 
 }
 .card-body{
@@ -597,7 +598,8 @@ h6 {
   border-radius: 50%;
   margin-bottom: 15px;
   position: relative;
-  top: 14vh;
+  top: 13%;
+  
   z-index: 3;
 }
 
