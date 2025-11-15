@@ -2,7 +2,7 @@
    RESPONSIVE STYLES
    ============================ */
 
-/* ======= Small Devices (max-width: 414px) ======= */
+/* ======= Small Devices (max-width: 575px) ======= */
 @media (max-width: 575px) {
 
     .countdown {
@@ -69,7 +69,7 @@
     }
 
     .purehealth {
-        width: 100%;
+        width: 39%;
         padding-top: 0px;
     }
 
@@ -208,7 +208,7 @@
     }
 
     .purehealth {
-        width: 60%;
+        width: 40%;
     }
 
     .footer-section iframe {
@@ -300,7 +300,37 @@
     .show-for-large {
         display: none;
     }
+
+    .team-card img {
+
+        top: 10vh;
+    }
+
+
+    .card-body {
+        height: 598px;
+        padding-top: 122px;
+
+    }
+
+    #comittee-team #row-1 .card-body {
+        height: 343px;
+    }
+
+    #comittee-team #row-2 #card-2 .card-body,
+    #comittee-team #row-2 #card-3 .card-body,
+    #comittee-team #row-2 #card-4 .card-body,
+    #comittee-team #row-2 #card-5 .card-body,
+    #comittee-team #row-2 #card-6 .card-body,
+    #comittee-team #row-2 #card-7 .card-body,
+    #comittee-team #row-2 #card-8 .card-body,
+    #comittee-team #row-2 #card-9 .card-body,
+    #comittee-team #row-2 #card-10 .card-body,
+    #comittee-team #row-2 #card-11 .card-body {
+        height: 350px;
+    }
 }
+
 
 /* ======= Laptops (885px – 1024px) ======= */
 @media (min-width: 885px) and (max-width: 1024px) {
