@@ -559,6 +559,9 @@ h6 {
   align-content: center;
 
 }
+.card-body{
+  padding-top: 100px;
+}
 
 #comittee-team .card-body {
   display: flex;
@@ -567,18 +570,18 @@ h6 {
 
 }
 
-#comittee-team #row-1 .card-body {
-  height: 177px;
+.card-body {
+  height: 420px;
 }
 
-#comittee-team #row-2 .card-body,
+/* #comittee-team #row-2 .card-body,
 #comittee-team #row-3 .card-body {
-  height: 240px;
+  height: 420px;
 }
 
 #comittee-team #row-4 .card-body {
-  height: 340px;
-}
+  height: 420px;
+} */
 
 
 .card_cotent {
@@ -588,11 +591,14 @@ h6 {
 }
 
 .team-card img {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
+  position: relative;
+  top: 14vh;
+  z-index: 3;
 }
 
 .team-name {
@@ -625,4 +631,19 @@ h6 {
 #comittee-team a:hover {
   background-color: #f0f0f0;
   color: var(--primary-dark-blue);
+}
+
+/* Optional: slightly larger modal and a gentle entrance transform */
+.modal.fade .modal-dialog {
+  transform: translateY(-10px);
+  transition: transform 300ms ease, opacity 300ms ease;
+}
+
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+/* Optional: soften backdrop */
+.modal-backdrop.show {
+  opacity: 0.45;
 }
