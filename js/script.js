@@ -1,6 +1,6 @@
 // Countdown Timer
 function startCountdown() {
-  const conferenceDate = new Date("December 6, 2027 00:00:00").getTime();
+  const conferenceDate = new Date("December 31, 2026 00:00:00").getTime();
   const countdownSection = document.getElementById("countdown-timer"); // target by ID
   const eventhapenning = document.getElementById("event-happening"); // target by ID
 
